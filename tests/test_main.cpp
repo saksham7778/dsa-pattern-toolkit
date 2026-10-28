@@ -39,7 +39,7 @@ int main() {
     expect(dsa::count_subarrays_with_sum(std::vector<int>{0, 0, 0}, 0) == 6,
            "prefix sum: repeated zero prefixes");
 
-    expect(dsa::max_fixed_window_sum(std::vector<int>{-5, -2, -7}, 2) == -9,
+    expect(dsa::max_fixed_window_sum(std::vector<int>{-5, -2, -7}, 2) == -7,
            "fixed window: all-negative values");
     expect_throws("fixed window: reject zero width", [] {
         (void)dsa::max_fixed_window_sum(std::vector<int>{1, 2}, 0);
